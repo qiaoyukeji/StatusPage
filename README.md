@@ -9,11 +9,21 @@
 4. docker 环境时自定义配置文件加载有优先级，如：custom-environment-variables.yaml > production.yml > default.yml。
 
 
+
+由于在 dockerfile 中执行 yarn build 一直报错，所以本人先在本地执行以下命令获取build文件夹：
+```bash
+yarn install && yarn cache clean
+yarn build
+```
+然后执行 dockerfile 中的命令，即可正常构建镜像。
+
+原 dockerfile 文件见 dockerfile.copy
+
 ---
 ---
 ---
 
-> 原 readme.md 内容如下：
+> **原 readme.md 内容如下：**
 
 # UptimeRobot 状态监测页
 
