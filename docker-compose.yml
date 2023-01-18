@@ -8,10 +8,10 @@ services:
       - PORT=3000
       - LOG_LEVEL=info
       - CRON_TIME=*/1 * * * *
-      - UPTIME_ROBOT_API=
+      - UPTIME_ROBOT_API=u1980027-61ef8b32efc09790527ad1fb
       - UPTIME_ROBOT_NAME_PATTERN=%group/%name
-      - WEBSITE_TITLE=
-      - WEBSITE_COPYRIGHT=
+      - WEBSITE_TITLE=巧遇网站服务状态监控平台
+      - WEBSITE_COPYRIGHT=2023 巧遇科技工作室 
     # To use config file for more flexible configure,
     # please uncomment next block
     # volumes: 

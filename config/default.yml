@@ -5,19 +5,21 @@ app:
   crontime: "*/1 * * * *"
 
 uptimerobot:
-  api_key: 
+  api_key: u1980027-61ef8b32efc09790527ad1fb
   pattern: "%group/%index/%name"
+  # pattern: "/"
   statuses: "2-9"
 
 website:
-  title: "服务状态"
-  copyright: "楠格"
+  # title: "服务状态"
+  # copyright: "楠格"
+  title: "巧遇网站服务状态监控平台"
+  copyright: "2023 巧遇科技工作室"
   links:
     - name: 主页
-      href: http://about.nange.cn
-    - name: 楠格
-      href: http://www.nange.cn
-    - name: 探针
-      href: http://server.nange.cn
-    - name: GitHub
-      href: http://github.com/xOS
+      href: http://www.qiaoyukeji.cn
+    - name: 监控报警平台
+      href: http://uptime.qiaoyukeji.cn
+    - name: 本网站使用开源程序 StatusPage 构建
+      href: https://github.com/xOS/StatusPage
+

@@ -1,10 +1,19 @@
-FROM node:16.13.1-alpine AS BUILDER
-WORKDIR /app
+# FROM node:16.13.1-alpine
 
-COPY package.json yarn.lock ./
-RUN yarn install && yarn cache clean
-COPY . .
-RUN yarn build
+# ENV TZ=Asia/Shanghai
+# RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+# ENV NODE_ENV=production
+
+# WORKDIR /app
+# COPY . .
+# # RUN npm i
+# RUN yarn install && yarn cache clean
+# RUN cd /app
+# RUN yarn build
+
+
+# CMD ["node", "build/bootstrap"]
+
 
 FROM node:16.13.1-alpine
 
@@ -13,13 +22,11 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 ENV NODE_ENV=production
 
 WORKDIR /app
-
-COPY package.json yarn.lock ./
+COPY . .
+# RUN npm i
 RUN yarn install && yarn cache clean
-COPY --from=BUILDER /app/build ./build
-COPY config ./config
-RUN yarn install && yarn cache clean && ls config
-# To ensure build success when .env is not exist.
-COPY .env* ./
+# RUN cd /app
+# RUN yarn build
+
 
 CMD ["node", "build/bootstrap"]

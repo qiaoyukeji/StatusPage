@@ -4,7 +4,8 @@ app:
 #   crontime: "*/5 * * * *"
 
 uptimerobot:
-  api_key: fake_api_key
+  # api_key: fake_api_key
+  api_key: u1980027-61ef8b32efc09790527ad1fb
   # pattern: "%group/%name"
   statuses: "2-9"
 

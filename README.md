@@ -1,3 +1,20 @@
+# 注意：
+> @qiaoyukeji 添加介绍：
+> 
+> 添加时间：2023-01-17 23:04:00
+
+1. 本程序仅仅是一个展示程序，是将 uptimerobot.com 的数据展示出来，所以需要先在 uptimerobot 上创建监控，然后再使用本程序。
+2. 使用本程序还需要获取 uptimerobot 的 API key，具体获取方法请参考：https://uptimerobot.com/dashboard#mySettings
+3. 在 uptimerobot.com 平台中添加监视的网站，uptimerobot中的网站名需要用下面提到的格式命名，否则可能无法正常显示。命名格式详见配置文件与下方**节点命名格式**。
+
+
+
+---
+---
+---
+
+> 原 readme.md 内容如下：
+
 # UptimeRobot 状态监测页
 
 > 一款基于 [UptimeRobot](https://uptimerobot.com/) 中文状态监测页
